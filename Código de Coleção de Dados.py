@@ -1,1 +1,22 @@
+se  iniciar  ==  '3' :
+    print ( " \ 033 [1; 32mO Cárdapio é esse:" )
+    lanche1 = Produtos ( '001' , 'Burgão' , 'Divino' , 'R $ 12,00' , 'Carne 250g, cheddar, churrasco e pão' )
+    lanche1 . exibirProduto ()
+    
+    lanche2  = { 'Nº do lanche' : '002' , 'Nome' : 'ovinho' , 'Sabor' : 'Gostosão' , 'Valor' : 'R $ 5,00' , 'Descrição' : 'Pão com carne e ovo ' }
+    imprimir ( lanche2 )
 
+    pedir  =  input ( ' \ 033 [1; 39mQual lanche voce quer ??' )
+
+    if  pedir  ==  '001' : #basta colocar o id_produto #
+        detalhe1 = DetalhePedido ( 'Código pedido: 1345' , 'Nome do lanche: Burgão' , 'Código Produto: 001' , 'Quantidade: 01' , 'O lanche é R $ 12,00' , 'Taxa de Entrega: R $ 0, 00 ' , ' Valor final: R $ 12,00 ' )
+        detalhe1 . exibirDetalhes ()
+        intervalo
+  
+    if  pedir  ==  '002' :
+      detalhe2 = [ 'Código pedido: 1342' , 'Nome do lanche: Ovinho' , 'Código Produto: 002' , 'Quantidade: 01' , 'O lanche é R $ 5,00' , 'Valor final: R $ 5,00' ]
+      detalhe2 . anexo ( "Valor Final: R $ 5,00" )
+      detalhe2 . pop ( 5 )
+      detalhe2 . inserir ( 5 , 'Taxa de entrega: R $ 0,00' )
+      imprimir ( detalhe2 )
+      intervaloSepa
